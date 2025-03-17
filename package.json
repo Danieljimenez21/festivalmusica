@@ -1,0 +1,24 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SAS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danieljimenez21/festivalmusica.git"
+  },
+  "keywords": [
+    "SAS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Daniel Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danieljimenez21/festivalmusica/issues"
+  },
+  "homepage": "https://github.com/Danieljimenez21/festivalmusica#readme"
+}
