@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Danieljimenez21/festivalmusica/issues"
   },
-  "homepage": "https://github.com/Danieljimenez21/festivalmusica#readme"
+  "homepage": "https://github.com/Danieljimenez21/festivalmusica#readme",
+  "devDependencies": {
+    "sass": "^1.85.1"
+  }
 }
