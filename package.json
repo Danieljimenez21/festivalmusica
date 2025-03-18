@@ -4,16 +4,14 @@
   "description": "Aprendiendo SAS y NPM",
   "type": "module",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch src/scss:build/css",
-    "hola": "gulp hola"
+    "css": " gulp css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Danieljimenez21/festivalmusica.git",
-    "hola": "gulp hola"
+    "url": "git+https://github.com/Danieljimenez21/festivalmusica.git"
   },
   "keywords": [
     "SAS",
@@ -28,6 +26,7 @@
   "homepage": "https://github.com/Danieljimenez21/festivalmusica#readme",
   "devDependencies": {
     "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.1",
     "sass": "^1.85.1"
   }
 }
