@@ -2,4 +2,4 @@
 *.ogv
 *.webm
 *.jpg
-node_modules/
+node_modules
