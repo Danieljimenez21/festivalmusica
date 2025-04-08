@@ -1,6 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+    navegacionfija()
     crearGaleria()
+    resaltarEnlace()
+    scrollNav()
 })
+
+function navegacionfija(){
+    const header = document.querySelector('.header')
+    const sobreFestival = document.querySelector('.sobre-festival')
+
+    window.addEventListener('scroll', function(){
+        if (sobreFestival.getBoundingClientRect().bottom < 1){
+            header.classList.add('fixed')
+        } else {
+            header.classList.remove('fixed')
+        }
+    })
+}
 
 function crearGaleria() {
     
@@ -58,4 +74,41 @@ function cerrarModal() {
         const body = document.querySelector('body')
         body.classList.remove('overflow-hidden')
     },400);
+}
+
+function resaltarEnlace(){
+    window.addEventListener('scroll', function(){
+        const sections = document.querySelectorAll('section')
+        const navList = this.document.querySelectorAll('.navegacion-principal a')
+
+        let actual = '';
+        sections.forEach( section => {
+            const sectionTop = section.offsetTop
+            const sectionHeight = section.clientHeight
+            if(window.scrollY >= (sectionTop - sectionHeight / 3 )){
+                actual = section.id
+            }
+        })
+
+        navList.forEach(link => {
+            link.classList.remove('active')
+            if(link.getAttribute('href') === '#' + actual){
+                link.classList.add('active')
+            }
+        })
+    })
+}
+
+function scrollNav(){
+    const navList = document.querySelectorAll('.navegacion-principal a')
+
+    navList.forEach( link => {
+        link.addEventListener('click', e => {
+            e.preventDefault()
+            const sectionScrooll = e.target.getAttribute('href')
+            const section = document.querySelector(sectionScrooll)
+
+            section.scrollIntoView({behavior: 'smooth'})
+        })
+    })
 }
