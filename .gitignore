@@ -3,4 +3,5 @@
 *.webm
 *.webp
 *.jpg
+*.avif
 node_modules
