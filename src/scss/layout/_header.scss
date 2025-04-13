@@ -65,3 +65,7 @@
 .nav-contenedor {
     @include contenedor();
 }
+
+.imagen-bandera{
+    max-width: 10%;
+}
