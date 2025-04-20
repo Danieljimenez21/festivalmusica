@@ -10,10 +10,12 @@
 
     .overlay {
         position: absolute;
+        display: block;
         background: linear-gradient(
             270deg,
-            rgba(v.$morado, 60%),
-            rgba(color.adjust(v.$morado,$lightness:-30%), 90%)
+            rgba(red, 30%),
+            rgba(color.adjust(black,$lightness:-30%), 90%)
+            
         );
         inset: 0;
 
@@ -38,7 +40,7 @@
         margin: 0;
     }
     p {
-        background-color: v.$rosa;
+        background-color: v.$amarillo;
         display: inline-block;
         padding: 1rem 2rem;
         margin-top: 2rem;
@@ -46,6 +48,7 @@
         font-size: 2.4rem;
         font-weight: 700;
         margin: 0;
+        border-radius: 1rem;
     }
 
 }

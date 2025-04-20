@@ -2,8 +2,8 @@
 @use 'base/mixins' as m;
 
 .header {
-    background-color: v.$verde;
-
+    background-color: v.$negro;
+   
     @include m.tablet{
         &.fixed {
             position: fixed;
@@ -66,6 +66,3 @@
     @include contenedor();
 }
 
-.imagen-bandera{
-    max-width: 10%;
-}

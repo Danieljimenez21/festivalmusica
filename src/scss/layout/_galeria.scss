@@ -1,6 +1,11 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+h3 {
+    color: v.$blanco;
+    
+}
+
 .galeria {
     @include m.contenedor;
    

@@ -11,6 +11,7 @@ html {
     box-sizing: inherit;
 }
 body {
+    background-color: v.$negro-claro;
     font-family: v.$fuente_principal;
     font-optical-sizing: auto;
     font-style: normal;
@@ -23,10 +24,11 @@ body {
 }
 p {
     font-size: 2rem;
-    color: v.$negro;
+    color: v.$blanco;
     line-height: 1.5;
 }
 .contenedor {
+    
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;

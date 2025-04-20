@@ -3,7 +3,6 @@
 @use 'sass:color';
 
 .lineup {
-    background-color: v.$rosa;
     h3, 
     .dia {
         text-align: center;
@@ -16,6 +15,7 @@
 }
 
 .escenarios-contenedor {
+    color: v.$blanco;
     @include m.contenedor;
     @include m.tablet{
         @include m.grid(2);
@@ -26,7 +26,7 @@
     padding-top: 2rem;
     .nombre-escenario{
         font-size: 3rem;
-        font-weight: 900;
+        font-weight: 800;
         text-transform: uppercase;
         text-align: center;
     }
@@ -37,23 +37,25 @@
     li{
         padding: 2.5rem;
         font-weight: 700;
+        color: #FBF3B9;
         span {
             font-weight: 400;
+            color: v.$blanco;
         }
     }
 }
 
 .bg-amarillo {
-    background-color: v.$amarillo;
+    background-color: #2E236C;
     li:nth-child(odd){ 
-        background-color: color.adjust(v.$amarillo, $lightness: 15%);//degradar colores en listas impares
+        background-color: color.adjust(#2E236C, $lightness: 15%);//degradar colores en listas impares
     }
 }
 
 .bg-verde {
-    background-color: v.$verde;
+    background-color: #C63C51;
     li:nth-child(odd){ //odd impares even pares
-        background-color: color.adjust(v.$verde, $lightness: 5%);
+        background-color: color.adjust(#C63C51, $lightness: 5%);
     }
 }
 
